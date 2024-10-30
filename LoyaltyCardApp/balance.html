@@ -7,9 +7,15 @@
 
     <section id="balance">
       <h2>Balance</h2>
-      <br />
-
       <p>Your balance is:</p>
+
+      <form action="balance" method="GET">
+        <label for="points">Add/Spend Points:</label>
+        <input type="number" id="points" name="points" /><br /><br />
+
+        <button type="submit" name="action" value="add">Add Points</button>
+        <button type="submit" name="action" value="spend">Spend Points</button>
+      </form>
     </section>
   </body>
 </html>
