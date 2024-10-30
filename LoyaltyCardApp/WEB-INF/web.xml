@@ -7,26 +7,34 @@
   version="3.1"
   metadata-complete="true">
 
-  
-  <servlet>
-		<servlet-name>EnterCompetition</servlet-name>
-		<servlet-class>CompetitionEntryServlet</servlet-class>
-	</servlet>
 
-	<servlet-mapping>
-		<servlet-name>EnterCompetition</servlet-name>
-		<url-pattern>/enterCompetition</url-pattern>
-	</servlet-mapping>
+	<servlet>
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>RegisterServlet</servlet-class>
+  </servlet>
+
+ <servlet-mapping>
+    <servlet-name>RegisterServlet</servlet-name>
+    <url-pattern>/register</url-pattern>
+  </servlet-mapping>
 
 	
   <servlet>
-		<servlet-name>CheckWinnings</servlet-name>
-		<servlet-class>CompetitionCheckWinnersServlet</servlet-class>
-	</servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
 
-	<servlet-mapping>
-		<servlet-name>CheckWinnings</servlet-name>
-		<url-pattern>/checkWinnersList</url-pattern>
-	</servlet-mapping>
+    <servlet>
+    <servlet-name>LoyaltyServlet</servlet-name>
+    <servlet-class>LoyaltyServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoyaltyServlet</servlet-name>
+    <url-pattern>/balance</url-pattern>
+  </servlet-mapping>
 
 </web-app>
