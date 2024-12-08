@@ -19,5 +19,11 @@
     <result name="success">/home.jsp</result>
     <result name="error">/error.jsp</result>
 </action>
+
+<action name="logoff" class="logoff" method="logoffUser">
+    <result name="success">/logoff.jsp</result>
+    <result name="error">/error.jsp</result>
+</action>
+
     </package>
 </struts>
