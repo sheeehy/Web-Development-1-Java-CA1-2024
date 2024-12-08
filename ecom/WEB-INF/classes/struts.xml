@@ -1,0 +1,23 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <package name="default" extends="struts-default">
+
+	<action name="vote" class="StrutsVote" method ="voteMethod">
+        <result name="success">/voteConfirmed.jsp</result>
+	    <result name="error">/error.jsp</result>
+    </action>
+		
+   <action name="register" class="register" method="registerUser">
+            <result name="success">/registerSuccess.jsp</result>
+            <result name="error">/error.jsp</result>
+        </action>
+        
+        <action name="login" class="login" method="loginUser">
+    <result name="success">/home.jsp</result>
+    <result name="error">/error.jsp</result>
+</action>
+    </package>
+</struts>
