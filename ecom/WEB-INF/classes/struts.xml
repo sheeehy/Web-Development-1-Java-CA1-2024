@@ -25,5 +25,10 @@
     <result name="error">/error.jsp</result>
 </action>
 
+<action name="viewMyProfile" class="profile">
+    <result name="success">/viewMyProfile.jsp</result>
+    <result name="error">/error.jsp</result>
+</action>
+
     </package>
 </struts>
