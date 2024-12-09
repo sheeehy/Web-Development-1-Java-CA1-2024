@@ -30,5 +30,15 @@
     <result name="error">/error.jsp</result>
 </action>
 
+<action name="additem" class="additem" method="renderForm">
+    <result name="input">/additem.jsp</result>
+</action>
+
+<action name="submitAddItem" class="additem" method="execute">
+    <result name="success">/itemadded.jsp</result>
+    <result name="error">/error.jsp</result>
+</action>
+
+
     </package>
 </struts>
