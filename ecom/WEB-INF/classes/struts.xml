@@ -39,6 +39,11 @@
     <result name="error">/error.jsp</result>
 </action>
 
+    <action name="viewallitems" class="viewallitems">
+    <result name="success">/viewallitems.jsp</result>
+    <result name="error">/error.jsp</result>
+</action>
+
 
     </package>
 </struts>
